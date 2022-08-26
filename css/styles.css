@@ -222,11 +222,18 @@ body{
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
+    overflow-x: hidden;
 }
 /* ------------- End of Global classes ----------*/
 
 
 /*------------ Media Query ----------------*/
+@media(max-width:480px){
+    #site-main img{
+        margin: auto;
+        object-fit: cover;
+    }
+}
 /* for large screen sm(640px) */
 @media(min-width:640px){
     .container{
@@ -351,10 +358,11 @@ body{
     height: 95vh;
     padding: 16rem 8rem;
 } 
-img{
+#site-main img{
     max-width: 100%;
     object-fit: cover;
-    padding-top: 3rem;
+    padding-top: 4rem;
+    filter: saturate(1);
 }
 .row{
     display: flex;
